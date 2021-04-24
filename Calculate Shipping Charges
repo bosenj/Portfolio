@@ -1,0 +1,53 @@
+double calculateCharge(double w, int m);
+
+int main()
+{
+	double weight;
+	int miles;
+
+	cout << "What is the weight of the package in kilograms?\n";
+	cin >> weight;
+	
+	cout << "How many miles does the package needs to be shipped?\n";
+	cin >> miles;
+
+	calculateCharge(weight, miles);
+
+	cout << calculateCharge;
+
+	return 0;
+}
+
+double calculateCharge(double w, int m)
+{
+	int milesFlat = 500;
+	int i = 2;
+	
+	if (w <= 2)
+	{
+		w = 3.10;
+	}
+	else if (w <= 6 || w > 2)
+	{
+		w = 4.20;
+	}
+	else if (w <= 10 || w > 6)
+	{
+		w = 5.30;
+	}
+	else
+	{
+		w = 6.40;
+	}
+
+	while (m >= milesFlat)
+	{
+		w * i;
+		i++;
+		milesFlat + 500;
+	}
+
+	double shippingCost = w;
+
+	return shippingCost;
+}
