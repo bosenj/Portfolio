@@ -1,13 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+@author soblab
 
-/**
- *
- * @author soblab
- */
 public class Television {
     private String brand;
     private int screenSize;
@@ -97,18 +89,5 @@ public class Television {
     TV[2] = new Television("Sony", 70);
     TV[3] = new Television("Samsung", 65);
     printArray(TV);
-
-    Television[] TV3 = new Television[10];
-    String brand;
-    int size;
-    File myfile = new File("lab7data.txt");
-    Scanner infile = new Scanner(myfile);
-    int i = 0;
-    while(infile.hasNext()){
-        brand = infile.nextLine();
-        size = infile.nextInt();
-        infile.nextLine();
-        TV3[i] = new Television(brand, size);
-        i++;
     }
 }
